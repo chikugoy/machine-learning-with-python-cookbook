@@ -15,8 +15,10 @@ matrix.size
 
 ##########
 
+# -1は必要な数だけ
 matrix.reshape(1, -1)
 
 ##########
 
+# 12の要素を持つ一次元配列に変換される
 matrix.reshape(12)
