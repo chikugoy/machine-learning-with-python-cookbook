@@ -16,6 +16,7 @@ x = np.array([[-1000.1],
 scaler = preprocessing.StandardScaler()
 
 # 特徴量を変換
+# 平均が0で標準偏差が1になるよう変換
 standardized = scaler.fit_transform(x)
 
 # 特徴量を表示
@@ -28,6 +29,8 @@ print("平均:", round(standardized.mean()))
 print("標準偏差:", standardized.std())
 
 ##########
+
+# 外れ値がある場合はスケール変換をした方がいい
 
 # スケール変換器を作成
 robust_scaler = preprocessing.RobustScaler()
