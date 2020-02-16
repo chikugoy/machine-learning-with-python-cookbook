@@ -26,5 +26,8 @@ dataframe.drop_duplicates(subset=['Sex'])
 ##########
 
 # 重複を削除
+# keep='first' default 重複した最初の行は除外
+# keep='last' 重複した最後の行は除外
+# keep=False 重複は全て削除
 dataframe.drop_duplicates(subset=['Sex'], keep='last')
 

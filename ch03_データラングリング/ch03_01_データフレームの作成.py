@@ -21,6 +21,7 @@ dataframe
 new_person = pd.Series(['Molly Mooney', 40, True], index=['Name','Age','Driver'])
 
 # 行を追加
+# ignore_index=True で新たな行インデックスを割当
 dataframe.append(new_person, ignore_index=True)
 
 
